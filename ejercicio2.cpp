@@ -1,8 +1,10 @@
 #include <iostream>
 #include <vector>
 
+using namespace std;
+
 // Procedimiento InsertionSort
-void InsertionSort(std::vector<int>& lista) {
+void InsertionSort(vector<int>& lista) {
     int tamano = lista.size(); // tamaño = longitud(lista)
     
     // para i de 1 a tamaño - 1 hacer:
@@ -24,21 +26,21 @@ void InsertionSort(std::vector<int>& lista) {
 
 int main() {
     // Ejemplo de uso
-    std::vector<int> miLista = {64, 34, 25, 12, 22, 11, 90};
+    vector<int> miLista = {64, 34, 25, 12, 22, 11, 90};
     
-    std::cout << "Lista original: ";
+    cout << "Lista original: ";
     for (int num : miLista) {
-        std::cout << num << " ";
+        cout << num << " ";
     }
-    std::cout << std::endl;
+    cout << endl;
     
     InsertionSort(miLista);
     
-    std::cout << "Lista ordenada: ";
+    cout << "Lista ordenada: ";
     for (int num : miLista) {
-        std::cout << num << " ";
+        cout << num << " ";
     }
-    std::cout << std::endl;
+    cout << endl;
     
     return 0;
 }
